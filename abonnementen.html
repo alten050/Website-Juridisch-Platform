@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abonnementen - Jouw Fiscaal Recht</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                        neutral: '#64748b',
+                        dark: '#0f172a',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.7; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; letter-spacing: -0.03em; }
+        .shadow-layered { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24), 0 4px 8px rgba(30,64,175,0.1), 0 8px 16px rgba(30,64,175,0.05); }
+        .gradient-bg { background: radial-gradient(circle at 20% 50%, rgba(30,64,175,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(96,165,250,0.1) 0%, transparent 50%), radial-gradient(circle at 40% 80%, rgba(59,130,246,0.1) 0%, transparent 50%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-white shadow-layered sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">FR</span>
+                </div>
+                <span class="text-xl font-serif font-bold text-primary">Jouw Fiscaal Recht</span>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html" class="text-neutral hover:text-primary transition-colors">Home</a></li>
+                <li><a href="over-ons.html" class="text-neutral hover:text-primary transition-colors">Over Ons</a></li>
+                <li><a href="diensten.html" class="text-neutral hover:text-primary transition-colors">Diensten</a></li>
+                <li><a href="abonnementen.html" class="text-neutral hover:text-primary transition-colors">Abonnementen</a></li>
+                <li><a href="contact.html" class="text-neutral hover:text-primary transition-colors">Contact</a></li>
+            </ul>
+            <a href="login.html" class="bg-primary text-white px-6 py-2 rounded-lg shadow-layered hover:shadow-floating transform hover:scale-105 transition-all duration-300">Inloggen</a>
+        </nav>
+    </header>
+
+    <section class="gradient-bg py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-serif font-bold text-dark mb-6">Abonnementen</h1>
+            <p class="text-xl text-neutral max-w-2xl mx-auto">Kies het abonnement dat het beste bij uw behoeften past.</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 items-start">
+                <!-- Basis -->
+                <div class="p-8 shadow-layered rounded-lg bg-white text-center">
+                    <h2 class="text-2xl font-serif font-bold mb-2 text-primary">Basis</h2>
+                    <p class="text-4xl font-bold mb-1">€100</p>
+                    <p class="text-neutral text-sm mb-6">per intake</p>
+                    <ul class="text-left mb-8 space-y-3">
+                        <li class="flex items-start"><span class="text-primary mr-2">✓</span> Basis dossieranalyse</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">✓</span> Voorlopige beoordeling</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">✓</span> Samenvatting van de kwestie</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">✓</span> Initieel adviesrapport</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">✓</span> 30 min. telefonische consultatie</li>
+                        <li class="flex items-start text-gray-300"><span class="mr-2">✗</span> Bezwaar- en beroepschriften</li>
+                        <li class="flex items-start text-gray-300"><span class="mr-2">✗</span> Procesvertegenwoordiging</li>
+                    </ul>
+                    <a href="contact.html" class="block bg-white border-2 border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition-all duration-300">Kies Basis</a>
+                </div>
+
+                <!-- Premium (aanbevolen) -->
+                <div class="p-8 shadow-floating rounded-lg bg-primary text-white text-center relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-white text-xs font-bold px-4 py-1 rounded-full">Meest Gekozen</div>
+                    <h2 class="text-2xl font-serif font-bold mb-2">Premium</h2>
+                    <p class="text-4xl font-bold mb-1">€250–€750</p>
+                    <p class="text-blue-200 text-sm mb-6">afhankelijk van complexiteit</p>
+                    <ul class="text-left mb-8 space-y-3">
+                        <li class="flex items-start"><span class="text-blue-200 mr-2">✓</span> Uitgebreide dossieranalyse</li>
+                        <li class="flex items-start"><span class="text-blue-200 mr-2">✓</span> Risicoanalyse en strategie</li>
+                        <li class="flex items-start"><span class="text-blue-200 mr-2">✓</span> Gedetailleerd adviesrapport</li>
+                        <li class="flex items-start"><span class="text-blue-200 mr-2">✓</span> Voorbereiding bezwaar/beroep</li>
+                        <li class="flex items-start"><span class="text-blue-200 mr-2">✓</span> Tot 2 uur consultaties</li>
+                        <li class="flex items-start"><span class="text-blue-200 mr-2">✓</span> Toegang online cliëntenportaal</li>
+                        <li class="flex items-start text-blue-300"><span class="mr-2">✗</span> Procesvertegenwoordiging rechtbank</li>
+                    </ul>
+                    <a href="contact.html" class="block bg-white text-primary px-6 py-3 rounded-lg hover:bg-blue-50 transition-all duration-300 font-semibold">Kies Premium</a>
+                </div>
+
+                <!-- Procedure -->
+                <div class="p-8 shadow-layered rounded-lg bg-white text-center">
+                    <h2 class="text-2xl font-serif font-bold mb-2 text-primary">Procedure</h2>
+                    <p class="text-3xl font-bold mb-1">No Cure, No Pay</p>
+                    <p class="text-neutral text-sm mb-6">2× kosten bij succes</p>
+                    <ul class="text-left mb-8 space-y-3">
+                        <li class="flex items-start"><span class="text-primary mr-2">✓</span> Volledige begeleiding</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">✓</span> Persoonlijke case manager</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">✓</span> Strategieontwikkeling</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">✓</span> Samenwerking fiscale advocaten</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">✓</span> Procesvertegenwoordiging rechtbank</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">✓</span> Reguliere voortgangsupdates</li>
+                        <li class="flex items-start"><span class="text-primary mr-2">✓</span> Geen kosten bij geen resultaat</li>
+                    </ul>
+                    <a href="contact.html" class="block bg-white border-2 border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition-all duration-300">Kies Procedure</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Abonnementen -->
+    <section class="py-16 gradient-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-serif font-bold text-center text-dark mb-10">Veelgestelde vragen over abonnementen</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white p-6 shadow-layered rounded-lg">
+                    <h3 class="text-lg font-serif font-bold mb-2 cursor-pointer flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        Kan ik tussentijds wisselen van abonnement?
+                        <span class="text-primary text-2xl leading-none">+</span>
+                    </h3>
+                    <p class="text-neutral hidden">Ja. Als uw zaak complexer blijkt dan verwacht, kunt u op elk moment opwaarderen naar Premium of Procedure. Reeds betaalde kosten worden verrekend. Neem contact op met uw adviseur voor de mogelijkheden.</p>
+                </div>
+                <div class="bg-white p-6 shadow-layered rounded-lg">
+                    <h3 class="text-lg font-serif font-bold mb-2 cursor-pointer flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        Wat houdt "No Cure, No Pay" precies in?
+                        <span class="text-primary text-2xl leading-none">+</span>
+                    </h3>
+                    <p class="text-neutral hidden">Bij het Procedure Abonnement betaalt u alleen als wij een positief resultaat behalen. Lukt het niet, dan betaalt u niets. Slagen wij wél, dan is het honorarium tweemaal de vooraf overeengekomen basiskosten. De exacte bedragen worden vastgelegd in een opdrachtovereenkomst vóór aanvang.</p>
+                </div>
+                <div class="bg-white p-6 shadow-layered rounded-lg">
+                    <h3 class="text-lg font-serif font-bold mb-2 cursor-pointer flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        Welk abonnement past bij mijn situatie?
+                        <span class="text-primary text-2xl leading-none">+</span>
+                    </h3>
+                    <p class="text-neutral hidden">Als u een eerste indruk wilt van uw dossier, kies dan Basis. Verwacht u bezwaar of beroep, dan is Premium de logische keuze. Gaat het om een rechtszaak of een zaak waarbij u zeker wilt zijn van succes, kies dan voor Procedure. Twijfelt u? Neem vrijblijvend contact op — wij adviseren u kosteloos.</p>
+                </div>
+                <div class="bg-white p-6 shadow-layered rounded-lg">
+                    <h3 class="text-lg font-serif font-bold mb-2 cursor-pointer flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        Zijn er verborgen kosten?
+                        <span class="text-primary text-2xl leading-none">+</span>
+                    </h3>
+                    <p class="text-neutral hidden">Nee. Alle kosten worden vooraf transparant gecommuniceerd in een opdrachtovereenkomst. Er zijn geen verborgen kosten of verrassingen achteraf. Alleen als uw zaak een onverwachte wending neemt, bespreken wij samen of aanvullende inzet nodig is.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">FR</span>
+                        </div>
+                        <span class="font-serif font-bold text-white">Jouw Fiscaal Recht</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Toegankelijke fiscale rechtsbescherming voor particulieren en ondernemers.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Snelle Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="over-ons.html" class="hover:text-white transition-colors">Over Ons</a></li>
+                        <li><a href="diensten.html" class="hover:text-white transition-colors">Diensten</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Contact</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>Herengracht 182, 1016 BR Amsterdam</li>
+                        <li>020-123 45 67</li>
+                        <li>info@jouwfiscaalrecht.nl</li>
+                        <li>Ma-Vr: 09:00 – 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 Jouw Fiscaal Recht. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

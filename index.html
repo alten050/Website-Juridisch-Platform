@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jouw Fiscaal Recht - Professionele Fiscale Rechtsbescherming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                        neutral: '#64748b',
+                        dark: '#0f172a',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                        'bounce-in': 'bounceIn 1.2s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(50px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        bounceIn: {
+                            '0%': { transform: 'scale(0.3)', opacity: '0' },
+                            '50%': { transform: 'scale(1.05)' },
+                            '70%': { transform: 'scale(0.9)' },
+                            '100%': { transform: 'scale(1)', opacity: '1' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: -0.03em;
+        }
+        .shadow-layered {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24), 0 4px 8px rgba(30,64,175,0.1), 0 8px 16px rgba(30,64,175,0.05);
+        }
+        .shadow-floating {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0 20px 40px rgba(30,64,175,0.1);
+        }
+        .parallax-bg {
+            background-image: url('https://placehold.co/1920x1080/1e40af/ffffff?text=Fiscaal+Recht');
+            background-size: cover;
+            background-position: center;
+            transform: translateZ(0);
+        }
+        .gradient-bg {
+            background: radial-gradient(circle at 20% 50%, rgba(30,64,175,0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(96,165,250,0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 80%, rgba(59,130,246,0.1) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 bg-primary flex items-center justify-center z-50">
+        <div class="animate-spin rounded-full h-32 w-32 border-b-2 border-white"></div>
+    </div>
+    <!-- Header -->
+    <header class="bg-white shadow-layered sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">FR</span>
+                </div>
+                <span class="text-xl font-serif font-bold text-primary">Jouw Fiscaal Recht</span>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="text-neutral hover:text-primary transition-colors duration-300">Home</a></li>
+                <li><a href="over-ons.html" class="text-neutral hover:text-primary transition-colors duration-300">Over Ons</a></li>
+                <li><a href="#diensten" class="text-neutral hover:text-primary transition-colors duration-300">Diensten</a></li>
+                <li><a href="abonnementen.html" class="text-neutral hover:text-primary transition-colors duration-300">Abonnementen</a></li>
+                <li><a href="contact.html" class="text-neutral hover:text-primary transition-colors duration-300">Contact</a></li>
+            </ul>
+            <a href="login.html" class="bg-primary text-white px-6 py-2 rounded-lg shadow-layered hover:shadow-floating transform hover:scale-105 transition-all duration-300">Inloggen</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg py-20 relative overflow-hidden">
+        <div class="parallax-bg absolute inset-0 opacity-20"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-dark mb-6 animate-fade-in">
+                Toegankelijke <span class="text-primary">Fiscale Rechtsbescherming</span>
+            </h1>
+            <p class="text-xl text-neutral mb-8 max-w-2xl mx-auto animate-slide-up">
+                Ontdek onze diensten voor invorderingszaken, betalingsregelingen en meer. Eenvoudig via DigiD en e-Herkenning.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 animate-bounce-in">
+                <a href="#diensten" class="bg-primary text-white px-8 py-4 rounded-lg shadow-layered hover:shadow-floating transform hover:scale-105 transition-all duration-300">Ontdek Diensten</a>
+                <a href="#contact" class="border-2 border-primary text-primary px-8 py-4 rounded-lg hover:bg-primary hover:text-white transition-all duration-300">Neem Contact Op</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voordelen -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-serif font-bold text-center text-dark mb-12">Waarom Kiezen voor Ons?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 shadow-layered rounded-lg bg-gray-50 hover:shadow-floating transform hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-16 h-16 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center animate-spin-once">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Toegankelijk</h3>
+                    <p class="text-neutral">Eenvoudige toegang via DigiD en e-Herkenning voor particulieren en bedrijven.</p>
+                </div>
+                <div class="text-center p-6 shadow-layered rounded-lg bg-gray-50 hover:shadow-floating transform hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-16 h-16 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Deskundige Begeleiding</h3>
+                    <p class="text-neutral">Samenwerking met ervaren fiscale advocaten voor optimale ondersteuning.</p>
+                </div>
+                <div class="text-center p-6 shadow-layered rounded-lg bg-gray-50 hover:shadow-floating transform hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-16 h-16 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold mb-2">Flexibele Abonnementen</h3>
+                    <p class="text-neutral">Kies uit basis, premium of procedure abonnementen aangepast aan uw behoeften.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diensten Overzicht -->
+    <section id="diensten" class="py-16 gradient-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-serif font-bold text-center text-dark mb-12">Onze Diensten</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-wrap justify-center mb-8">
+                    <button class="tab-btn bg-primary text-white px-6 py-2 rounded-lg mx-2 mb-2" data-tab="invorderingszaken">Invorderingszaken</button>
+                    <button class="tab-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-lg mx-2 mb-2" data-tab="betalingsregelingen">Betalingsregelingen</button>
+                    <button class="tab-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-lg mx-2 mb-2" data-tab="betalingsonmacht">Betalingsonmacht</button>
+                    <button class="tab-btn bg-gray-300 text-gray-700 px-6 py-2 rounded-lg mx-2 mb-2" data-tab="kwijtscheldingen">Kwijtscheldingen</button>
+                </div>
+                <div id="invorderingszaken" class="tab-content bg-white p-6 shadow-layered rounded-lg animate-on-scroll">
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Invorderingszaken</h3>
+                    <p class="text-neutral mb-4">Gedetailleerde hulp bij bezwaar en beroep tegen belastingaanslagen. Wij begeleiden u door het gehele proces, van documentverzameling tot vertegenwoordiging.</p>
+                    <ul class="list-disc list-inside text-neutral">
+                        <li>Voorlopige beoordeling van uw zaak</li>
+                        <li>Opstellen van bezwaar- en beroepschriften</li>
+                        <li>Samenwerking met fiscale advocaten indien nodig</li>
+                    </ul>
+                </div>
+                <div id="betalingsregelingen" class="tab-content bg-white p-6 shadow-layered rounded-lg hidden animate-on-scroll">
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Betalingsregelingen</h3>
+                    <p class="text-neutral mb-4">Ondersteuning bij het aanvragen en beheren van betalingsregelingen met de belastingdienst. Wij zorgen voor een haalbare oplossing.</p>
+                    <ul class="list-disc list-inside text-neutral">
+                        <li>Analyse van uw financiële situatie</li>
+                        <li>Onderhandeling met de belastingdienst</li>
+                        <li>Monitoring van de regeling</li>
+                    </ul>
+                </div>
+                <div id="betalingsonmacht" class="tab-content bg-white p-6 shadow-layered rounded-lg hidden animate-on-scroll">
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Betalingsonmacht</h3>
+                    <p class="text-neutral mb-4">Hulp bij het aantonen van betalingsonmacht. Wij verzamelen de benodigde bewijsstukken en stellen de juiste documenten op.</p>
+                    <ul class="list-disc list-inside text-neutral">
+                        <li>Beoordeling van uw situatie</li>
+                        <li>Verzameling van financiële documenten</li>
+                        <li>Indienen van het verzoek</li>
+                    </ul>
+                </div>
+                <div id="kwijtscheldingen" class="tab-content bg-white p-6 shadow-layered rounded-lg hidden animate-on-scroll">
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Kwijtscheldingen</h3>
+                    <p class="text-neutral mb-4">Stappenplan en volledige ondersteuning bij kwijtscheldingsverzoeken. Van aanvraag tot besluit.</p>
+                    <ul class="list-disc list-inside text-neutral">
+                        <li>Check op aanspraak</li>
+                        <li>Opstellen van het verzoek</li>
+                        <li>Follow-up en bezwaar indien nodig</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="abonnementen.html" class="bg-primary text-white px-8 py-4 rounded-lg shadow-layered hover:shadow-floating transform hover:scale-105 transition-all duration-300">Bekijk Abonnementen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-serif font-bold text-center text-dark mb-12">Wat Klanten Zeggen</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 shadow-layered rounded-lg bg-gray-50 animate-on-scroll">
+                    <p class="text-neutral italic mb-4">"Uitstekende service en professionele begeleiding. Helpen mij enorm bij mijn fiscale zaken."</p>
+                    <p class="font-bold">- Jan de Vries, Ondernemer</p>
+                </div>
+                <div class="p-6 shadow-layered rounded-lg bg-gray-50 animate-on-scroll">
+                    <p class="text-neutral italic mb-4">"Dankzij hun hulp kon ik een goede betalingsregeling treffen. Zeer tevreden!"</p>
+                    <p class="font-bold">- Maria Jansen, Particulier</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 gradient-bg">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-serif font-bold text-center text-dark mb-12">Veelgestelde Vragen</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white p-6 shadow-layered rounded-lg animate-on-scroll">
+                    <h3 class="text-xl font-serif font-bold mb-2 cursor-pointer" onclick="toggleFAQ(this)">Wat is fiscale rechtsbescherming?</h3>
+                    <p class="text-neutral hidden">Fiscale rechtsbescherming omvat hulp bij belastinggerelateerde juridische zaken, zoals bezwaar maken tegen aanslagen of betalingsregelingen treffen.</p>
+                </div>
+                <div class="bg-white p-6 shadow-layered rounded-lg animate-on-scroll">
+                    <h3 class="text-xl font-serif font-bold mb-2 cursor-pointer" onclick="toggleFAQ(this)">Hoe werkt DigiD integratie?</h3>
+                    <p class="text-neutral hidden">Via DigiD kunt u veilig inloggen met uw persoonlijke gegevens, zonder extra wachtwoorden te hoeven onthouden.</p>
+                </div>
+                <div class="bg-white p-6 shadow-layered rounded-lg animate-on-scroll">
+                    <h3 class="text-xl font-serif font-bold mb-2 cursor-pointer" onclick="toggleFAQ(this)">Wat kost een abonnement?</h3>
+                    <p class="text-neutral hidden">Onze abonnementen variëren van €100 voor basis tot variabele prijzen voor premium diensten, afhankelijk van de complexiteit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-layered opacity-0 transition-opacity duration-300">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script>
+        // Hide preloader on load
+        window.addEventListener('load', () => {
+            document.getElementById('preloader').style.display = 'none';
+        });
+
+        // Simple scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 200); // Stagger animation
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(50px)';
+            el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+            observer.observe(el);
+        });
+
+        // FAQ toggle
+        function toggleFAQ(el) {
+            const answer = el.nextElementSibling;
+            answer.classList.toggle('hidden');
+        }
+
+        // Back-to-top button
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTop.style.opacity = '1';
+            } else {
+                backToTop.style.opacity = '0';
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Tab functionality
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('bg-primary', 'text-white'));
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.add('bg-gray-300', 'text-gray-700'));
+                btn.classList.remove('bg-gray-300', 'text-gray-700');
+                btn.classList.add('bg-primary', 'text-white');
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.add('hidden'));
+                document.getElementById(btn.dataset.tab).classList.remove('hidden');
+            });
+        });
+    </script>
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">FR</span>
+                        </div>
+                        <span class="font-serif font-bold text-white">Jouw Fiscaal Recht</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Toegankelijke fiscale rechtsbescherming voor particulieren en ondernemers.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Snelle Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="over-ons.html" class="hover:text-white transition-colors">Over Ons</a></li>
+                        <li><a href="#diensten" class="hover:text-white transition-colors">Diensten</a></li>
+                        <li><a href="abonnementen.html" class="hover:text-white transition-colors">Abonnementen</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Contact</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>Herengracht 182, 1016 BR Amsterdam</li>
+                        <li>020-123 45 67</li>
+                        <li>info@jouwfiscaalrecht.nl</li>
+                        <li>Ma-Vr: 09:00 – 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 Jouw Fiscaal Recht. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .animate-spin-once {
+            animation: spin 1s ease-in-out;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        button, a {
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</body>
+</html></content>
+<parameter name="filePath">/Users/richardaltena/Projects/Website Juridisch platform/index.html
