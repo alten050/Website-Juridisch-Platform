@@ -91,6 +91,7 @@
                 <li><a href="#home" class="text-neutral hover:text-primary transition-colors duration-300">Home</a></li>
                 <li><a href="over-ons.html" class="text-neutral hover:text-primary transition-colors duration-300">Over Ons</a></li>
                 <li><a href="#diensten" class="text-neutral hover:text-primary transition-colors duration-300">Diensten</a></li>
+                <li><a href="portalen.html" class="text-neutral hover:text-primary transition-colors duration-300">Portalen</a></li>
                 <li><a href="abonnementen.html" class="text-neutral hover:text-primary transition-colors duration-300">Abonnementen</a></li>
                 <li><a href="contact.html" class="text-neutral hover:text-primary transition-colors duration-300">Contact</a></li>
             </ul>
@@ -99,18 +100,17 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="gradient-bg py-20 relative overflow-hidden">
-        <div class="parallax-bg absolute inset-0 opacity-20"></div>
+    <section id="home" class="gradient-bg py-20 relative overflow-hidden" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center;">
         <div class="container mx-auto px-6 text-center relative z-10">
-            <h1 class="text-5xl md:text-7xl font-serif font-bold text-dark mb-6 animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 animate-fade-in">
                 Toegankelijke <span class="text-primary">Fiscale Rechtsbescherming</span>
             </h1>
-            <p class="text-xl text-neutral mb-8 max-w-2xl mx-auto animate-slide-up">
+            <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto animate-slide-up">
                 Ontdek onze diensten voor invorderingszaken, betalingsregelingen en meer. Eenvoudig via DigiD en e-Herkenning.
             </p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 animate-bounce-in">
                 <a href="#diensten" class="bg-primary text-white px-8 py-4 rounded-lg shadow-layered hover:shadow-floating transform hover:scale-105 transition-all duration-300">Ontdek Diensten</a>
-                <a href="#contact" class="border-2 border-primary text-primary px-8 py-4 rounded-lg hover:bg-primary hover:text-white transition-all duration-300">Neem Contact Op</a>
+                <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-dark transition-all duration-300">Neem Contact Op</a>
             </div>
         </div>
     </section>
@@ -139,8 +139,15 @@
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"/></svg>
                     </div>
                     <h3 class="text-xl font-serif font-bold mb-2">Flexibele Abonnementen</h3>
-                    <p class="text-neutral">Kies uit basis, premium of procedure abonnementen aangepast aan uw behoeften.</p>
+                    <p class="text-neutral">Kies uit vier jaarlijkse lidmaatschappen — van Basis (€100/jr) tot Zakelijk (€699/jr).</p>
                 </div>
+            </div>
+            <div class="mt-10 rounded-xl overflow-hidden shadow-layered">
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80"
+                     alt="Professioneel adviesgesprek met cliënt"
+                     class="w-full object-cover"
+                     style="height:320px;"
+                     loading="lazy">
             </div>
         </div>
     </section>
@@ -199,6 +206,65 @@
         </div>
     </section>
 
+    <!-- Onze AI-Portalen -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="mb-10 rounded-xl overflow-hidden shadow-layered">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+                     alt="Digitale portalen voor fiscale aanvragen"
+                     class="w-full object-cover"
+                     style="height:280px;"
+                     loading="lazy">
+            </div>
+            <h2 class="text-4xl font-serif font-bold text-center text-dark mb-4">Onze AI-Portalen</h2>
+            <p class="text-center text-neutral mb-12">Direct aan de slag met uw verzoek — stap voor stap begeleid door AI</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Portaal 1: Uitstel betaling particulier -->
+                <div class="p-6 shadow-layered rounded-lg bg-gray-50 hover:shadow-floating transform hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold mb-2 text-dark">Uitstel betaling particulier</h3>
+                    <p class="text-neutral text-sm mb-4">Vraag uitstel van betaling aan voor uw rijksbelastingen of maak bezwaar op een afwijzing. De AI begeleidt u stap voor stap.</p>
+                    <a href="portaal-1.html" class="inline-block text-primary font-semibold hover:underline text-sm">Start portaal &rarr;</a>
+                </div>
+
+                <!-- Portaal 2: Uitstel betaling ondernemer -->
+                <div class="p-6 shadow-layered rounded-lg bg-gray-50 hover:shadow-floating transform hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold mb-2 text-dark">Uitstel betaling ondernemer</h3>
+                    <p class="text-neutral text-sm mb-4">Voor eenmanszaken, VOF's en BV's. Onderbouw uw liquiditeitspositie en dien een formeel verzoek in bij de Belastingdienst.</p>
+                    <a href="portalen.html" class="inline-block text-primary font-semibold hover:underline text-sm">Start portaal &rarr;</a>
+                </div>
+
+                <!-- Portaal 3: Kwijtschelding particulier -->
+                <div class="p-6 shadow-layered rounded-lg bg-gray-50 hover:shadow-floating transform hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm4.707 3.707a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L8.414 10l1.293-1.293z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold mb-2 text-dark">Kwijtschelding particulier</h3>
+                    <p class="text-neutral text-sm mb-4">Kom ik in aanmerking? De AI toetst uw situatie aan de normen van de Belastingdienst en stelt het verzoek op.</p>
+                    <a href="portalen.html" class="inline-block text-primary font-semibold hover:underline text-sm">Start portaal &rarr;</a>
+                </div>
+
+                <!-- Portaal 4: Kwijtschelding ondernemer -->
+                <div class="p-6 shadow-layered rounded-lg bg-gray-50 hover:shadow-floating transform hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-12 h-12 bg-neutral rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h3 class="text-lg font-serif font-bold mb-2 text-dark">Kwijtschelding ondernemer</h3>
+                    <p class="text-neutral text-sm mb-4">Kwijtschelding voor ondernemers is mogelijk onder strikte voorwaarden. Wij leiden u door het proces of schakelen over naar uitstel als dat beter past.</p>
+                    <a href="portalen.html" class="inline-block text-primary font-semibold hover:underline text-sm">Start portaal &rarr;</a>
+                </div>
+
+            </div>
+            <p class="text-center text-neutral text-sm mt-8">De portalen zijn beschikbaar voor alle leden. Inloggen via DigiD (particulieren) of e-Herkenning (ondernemers).</p>
+        </div>
+    </section>
+
     <!-- Testimonials -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-6">
@@ -231,7 +297,7 @@
                 </div>
                 <div class="bg-white p-6 shadow-layered rounded-lg animate-on-scroll">
                     <h3 class="text-xl font-serif font-bold mb-2 cursor-pointer" onclick="toggleFAQ(this)">Wat kost een abonnement?</h3>
-                    <p class="text-neutral hidden">Onze abonnementen variëren van €100 voor basis tot variabele prijzen voor premium diensten, afhankelijk van de complexiteit.</p>
+                    <p class="text-neutral hidden">Onze jaarlijkse lidmaatschappen starten bij €100 (Basis) en lopen tot €699 (Zakelijk) per jaar, exclusief btw. Zie de abonnementenpagina voor een volledig overzicht.</p>
                 </div>
             </div>
         </div>
@@ -337,7 +403,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
-                <p>&copy; 2024 Jouw Fiscaal Recht. Alle rechten voorbehouden.</p>
+                <p>&copy; 2025 Jouw Fiscaal Recht. Alle rechten voorbehouden.</p>
             </div>
         </div>
     </footer>

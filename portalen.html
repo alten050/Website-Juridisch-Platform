@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portalen - Jouw Fiscaal Recht</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                        neutral: '#64748b',
+                        dark: '#0f172a',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; line-height: 1.7; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; letter-spacing: -0.03em; }
+        .shadow-layered { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24), 0 4px 8px rgba(30,64,175,0.1), 0 8px 16px rgba(30,64,175,0.05); }
+        .shadow-floating { box-shadow: 0 10px 25px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0 20px 40px rgba(30,64,175,0.1); }
+        .gradient-bg { background: radial-gradient(circle at 20% 50%, rgba(30,64,175,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(96,165,250,0.1) 0%, transparent 50%), radial-gradient(circle at 40% 80%, rgba(59,130,246,0.1) 0%, transparent 50%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-white shadow-layered sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">FR</span>
+                </div>
+                <span class="text-xl font-serif font-bold text-primary">Jouw Fiscaal Recht</span>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="index.html" class="text-neutral hover:text-primary transition-colors">Home</a></li>
+                <li><a href="over-ons.html" class="text-neutral hover:text-primary transition-colors">Over Ons</a></li>
+                <li><a href="diensten.html" class="text-neutral hover:text-primary transition-colors">Diensten</a></li>
+                <li><a href="portalen.html" class="text-primary font-medium transition-colors">Portalen</a></li>
+                <li><a href="abonnementen.html" class="text-neutral hover:text-primary transition-colors">Abonnementen</a></li>
+                <li><a href="contact.html" class="text-neutral hover:text-primary transition-colors">Contact</a></li>
+            </ul>
+            <a href="login.html" class="bg-primary text-white px-6 py-2 rounded-lg shadow-layered hover:shadow-floating transform hover:scale-105 transition-all duration-300">Inloggen</a>
+        </nav>
+    </header>
+
+    <section class="py-20 relative overflow-hidden" style="background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center;">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-serif font-bold text-white mb-6">AI-Portalen</h1>
+            <p class="text-xl text-gray-200 max-w-2xl mx-auto">Kies uw verzoek en ga direct aan de slag</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Portaal 1: Uitstel betaling particulier -->
+                <div class="p-8 shadow-layered rounded-lg bg-white hover:shadow-floating transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h2 class="text-xl font-serif font-bold mb-1 text-primary">Uitstel betaling particulier</h2>
+                    <p class="text-sm text-secondary font-medium mb-3">Voor particulieren</p>
+                    <p class="text-neutral text-sm mb-6">Vraag uitstel van betaling aan voor uw rijksbelastingen of maak bezwaar op een afwijzing. De AI begeleidt u stap voor stap door het formulier. Uw verzoek wordt samengesteld op basis van uw persoonlijke situatie.</p>
+                    <button disabled class="block w-full bg-gray-200 text-gray-500 px-6 py-3 rounded-lg cursor-not-allowed text-sm font-medium">Portaal starten (binnenkort)</button>
+                </div>
+
+                <!-- Portaal 2: Uitstel betaling ondernemer -->
+                <div class="p-8 shadow-layered rounded-lg bg-white hover:shadow-floating transition-all duration-300">
+                    <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                    </div>
+                    <h2 class="text-xl font-serif font-bold mb-1 text-primary">Uitstel betaling ondernemer</h2>
+                    <p class="text-sm text-secondary font-medium mb-3">Voor ondernemers</p>
+                    <p class="text-neutral text-sm mb-6">Voor eenmanszaken, VOF's en BV's. Onderbouw uw liquiditeitspositie en dien een formeel verzoek in bij de Belastingdienst. Het portaal vraagt de juiste gegevens op en stelt het verzoekschrift automatisch op.</p>
+                    <button disabled class="block w-full bg-gray-200 text-gray-500 px-6 py-3 rounded-lg cursor-not-allowed text-sm font-medium">Portaal starten (binnenkort)</button>
+                </div>
+
+                <!-- Portaal 3: Kwijtschelding particulier -->
+                <div class="p-8 shadow-layered rounded-lg bg-white hover:shadow-floating transition-all duration-300">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 2a2 2 0 00-2 2v14l3.5-2 3.5 2 3.5-2 3.5 2V4a2 2 0 00-2-2H5zm4.707 3.707a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L8.414 10l1.293-1.293z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h2 class="text-xl font-serif font-bold mb-1 text-primary">Kwijtschelding particulier</h2>
+                    <p class="text-sm text-secondary font-medium mb-3">Voor particulieren</p>
+                    <p class="text-neutral text-sm mb-6">Kom ik in aanmerking? De AI toetst uw situatie aan de normen van de Belastingdienst en stelt het verzoek op. U vult uw inkomens- en vermogensgegevens in en het portaal beoordeelt automatisch uw kansen.</p>
+                    <button disabled class="block w-full bg-gray-200 text-gray-500 px-6 py-3 rounded-lg cursor-not-allowed text-sm font-medium">Portaal starten (binnenkort)</button>
+                </div>
+
+                <!-- Portaal 4: Kwijtschelding ondernemer -->
+                <div class="p-8 shadow-layered rounded-lg bg-white hover:shadow-floating transition-all duration-300">
+                    <div class="w-12 h-12 bg-neutral rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <h2 class="text-xl font-serif font-bold mb-1 text-primary">Kwijtschelding ondernemer</h2>
+                    <p class="text-sm text-secondary font-medium mb-3">Voor ondernemers</p>
+                    <p class="text-neutral text-sm mb-6">Kwijtschelding voor ondernemers is mogelijk onder strikte voorwaarden. Wij leiden u door het proces of schakelen over naar uitstel als dat beter past. Het portaal analyseert uw situatie en kiest de meest kansrijke route.</p>
+                    <button disabled class="block w-full bg-gray-200 text-gray-500 px-6 py-3 rounded-lg cursor-not-allowed text-sm font-medium">Portaal starten (binnenkort)</button>
+                </div>
+
+            </div>
+            <p class="text-center text-neutral text-sm mt-8">De portalen zijn momenteel in ontwikkeling. Leden ontvangen bericht zodra ze beschikbaar zijn.</p>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">FR</span>
+                        </div>
+                        <span class="font-serif font-bold text-white">Jouw Fiscaal Recht</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">Toegankelijke fiscale rechtsbescherming voor particulieren en ondernemers.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Snelle Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="over-ons.html" class="hover:text-white transition-colors">Over Ons</a></li>
+                        <li><a href="diensten.html" class="hover:text-white transition-colors">Diensten</a></li>
+                        <li><a href="abonnementen.html" class="hover:text-white transition-colors">Abonnementen</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-3">Contact</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>Herengracht 182, 1016 BR Amsterdam</li>
+                        <li>020-123 45 67</li>
+                        <li>info@jouwfiscaalrecht.nl</li>
+                        <li>Ma-Vr: 09:00 – 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Jouw Fiscaal Recht. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
